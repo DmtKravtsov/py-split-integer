@@ -2,9 +2,8 @@ from app.split_integer import split_integer
 
 
 def test_sum_of_the_parts_should_be_equal_to_value() -> None:
-    result = split_integer(10, 2)
-    assert result == [5, 5]
-    assert max(result) - min(result) <= 1
+    assert split_integer(10, 2) == [5, 5]
+    assert max(split_integer(10, 2)) - min(split_integer(10, 2)) <= 1
 
 
 def test_should_split_into_equal_parts_when_value_divisible_by_parts() -> None:
